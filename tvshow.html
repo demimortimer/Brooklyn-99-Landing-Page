@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+      }
+
+      footer {
+        display: block;
+        text-align: center;
+        background-color: #000000;
+        padding: 30px 0;
+        color: white;
+        font-size: 16px;
+      }
+
+      footer a {
+        color: #4f83c3;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        font-weight: 700;
+      }
+
+      .container {
+        background-color: white;
+        max-width: 800px;
+        margin: 50px auto;
+      }
+
+      .heading-text {
+        transform: skew(0deg, 173deg);
+        color: #feef01;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-style: oblique;
+        font-size: 100px;
+        line-height: 1;
+        text-shadow: 2px 2px #000000;
+        text-align: center;
+        padding-top: 30px;
+      }
+
+      .container-one {
+        display: flex;
+        align-items: center;
+      }
+
+      .c1image {
+        max-width: 300px;
+        padding: 20px;
+      }
+
+      .c1text {
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 20px;
+      }
+
+      .quote1 {
+        font-size: 100px;
+        position: absolute;
+        transform: translate(-30%, -40%);
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #4f83c3;
+      }
+
+      .quote2 {
+        font-size: 100px;
+        position: absolute;
+        transform: translate();
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #4f83c3;
+      }
+
+      .wikibutton {
+        display: block;
+        background-color: #4f83c3;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        margin: 20px auto;
+        transition: all 250ms ease-in-out;
+      }
+
+      .wikibutton:hover {
+        background-color: #feef01;
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+      }
+
+      .section2 {
+        background-color: #000000;
+      }
+
+      .heading {
+        transform: skew(0deg, 178deg);
+        color: #feef01;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-style: oblique;
+        font-size: 60px;
+        line-height: 1;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+      }
+
+      .char-container {
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+      }
+
+      .charimg {
+        margin: 20px;
+        border: 5px solid white;
+      }
+
+      .char {
+        text-align: center;
+      }
+
+      .char-quote {
+        max-width: 50%;
+        text-align: justify;
+        padding-right: 10px;
+      }
+      .charname {
+        font-size: 45px;
+        padding-top: 10px;
+        color: #feef01;
+        text-shadow: 2px 2px #000000;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-style: oblique;
+        text-align: center;
+      }
+
+      .watch-container {
+        background-color: #feef01;
+        color: black;
+      }
+
+      .watch-header {
+        transform: skew(0deg, 178deg);
+        color: black;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-style: oblique;
+        font-size: 60px;
+        line-height: 1;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+      }
+
+      .watch-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .watch-text {
+        font-size: 25px;
+        padding: 30px;
+        color: black;
+        text-align: justify;
+        margin: 0;
+      }
+
+      .watch-text a {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .watch-text a:hover {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .watch-image {
+        border-radius: 60px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+    <title>Binge-Worthy TV Shows</title>
+  </head>
+  <body>
+    <div class="heading-container">
+      <div class="heading-text">
+        BROOKYLN <br />
+        NINE-NINE
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-one">
+        <div class="c1image">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/273/original/b992.jpg?1706811451"
+            width="250px"
+          />
+        </div>
+        <div class="c1text">
+          <span class="quote1">“</span>
+          Set in the fictional 99th Precinct of the New York City Police
+          Department in Brooklyn, Brooklyn Nine-Nine follows a team of
+          detectives headed by the serious and intellectual Captain Raymond
+          Holt, who is assigned as their new commanding officer in the pilot
+          episode. The station's exterior is based on Brooklyn's 78th Precinct.
+          <span class="quote2">”</span>
+          <br /><br />
+          <form
+            action="https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine"
+            target="_blank"
+          >
+            <input type="submit" value="Find out more!" class="wikibutton" />
+          </form>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="heading">MEET THE CHARACTERS</div>
+        <div class="char-container">
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/292/original/jake.jpeg?1706814158"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+          <div class="char-quote">
+            <h1 class="charname">JAKE PERALTA</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> I wasn't hurt that badly. The
+              doctor said all my bleeding was internal. That's where the blood's
+              supposed to be. <span class="quote2">”</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char-quote">
+            <h1 class="charname">AMY SANTIAGO</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> That's why they say "it's test
+              time, so diaper up." <span class="quote2">”</span>
+            </p>
+          </div>
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/295/original/amy.jpeg?1706814334"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/325/original/rayholt.jpeg?1706824180"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+          <div class="char-quote">
+            <h1 class="charname">CAPTAIN HOLT</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> When people say "what's up?", they
+              mean "I am a person not worth talking to."
+              <span class="quote2">”</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char-quote">
+            <h1 class="charname">ROSA DIAZ</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> I'm in a cabin, in the middle of
+              nowhere. Inside it's just me and that stupid, slimy defense
+              attorney, and I'm beating the hell out of him.
+              <span class="quote2">”</span>
+            </p>
+          </div>
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/326/original/rosad.png?1706824373"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/329/original/terry.jpeg?1706824646"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+          <div class="char-quote">
+            <h1 class="charname">TERRY JEFFORDS</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> I'm Terry Jeffords, and when I put
+              my mind to something, I do it. My resting heart rate is six. Six!
+              <span class="quote2">”</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char-quote">
+            <h1 class="charname">CHARLES BOYLE</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> Oh, I love Paris! At least how
+              it's represented in the movie, Ratatouille.
+              <span class="quote2">”</span>
+            </p>
+          </div>
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/327/original/boyle.jpeg?1706824636"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+        </div>
+
+        <div class="char-container">
+          <div class="char">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/328/original/cheddar.jpeg?1706824640"
+              width="300px"
+              class="charimg"
+            />
+          </div>
+          <div class="char-quote">
+            <h1 class="charname">CHEDDAR THE DOG</h1>
+            <br />
+            <p class="c1text">
+              <span class="quote1"> “ </span> YOU TOOK THE WRONG FLUFFY BOY.
+              <span class="quote2">”</span>
+            </p>
+          </div>
+        </div>
+        .
+      </div>
+      <div class="watch-container">
+        <div class="watch-header">WHERE TO WATCH</div>
+        <div class="watch-flex">
+          <div class="watch-text">
+            Brooklyn 99 is streaming in most countries on
+            <a href="https://www.netflix.com/" target="_blank">Netflix</a
+            >.<br /><br />
+            If you are in the US, then Brooklyn 99 can be streamed on
+            <a href="https://www.peacocktv.com/" target="_blank">Peacock</a>.
+          </div>
+          <div class="watch-image">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/337/original/netflix.jpeg?1706826650"
+              width="300px"
+              class="watch-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      This site was created by
+      <a href="https://github.com/demimortimer" target="_blank"
+        >Demi Mortimer</a
+      >
+      for the
+      <a
+        href="https://www.shecodes.io/contests/binge-worthy-tv-show"
+        target="_blank"
+        >SheCodes Binge-Worthy TV Shows Challenge</a
+      >.
+    </footer>
+  </body>
+</html>
